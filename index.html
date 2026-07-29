@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOC Construction Inc.</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Vector Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -44,12 +41,9 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased font-sans">
-
-    <!-- NAVIGATION BAR (TOP) -->
     <nav class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-24 items-center">
-                <!-- Branding Logo Space -->
+        <div class="max-w-full mx-auto px-6 sm:px-10 lg:px-12">
+            <div class="flex justify-between h-24 items-center">                
                 <div class="flex items-center gap-3">
                     <div class="h-12 w-12 bg-custom-darkblue flex items-center justify-center rounded shadow">
                         <i class="fa-solid fa-trowel-bricks text-custom-white text-2xl"></i>
@@ -58,48 +52,35 @@
                         <span class="font-heading font-extrabold text-2xl text-custom-darkblue tracking-tight leading-none">TOC</span>
                         <span class="font-heading font-bold text-xs text-custom-blue tracking-widest mt-0.5">CONSTRUCTION</span>
                     </div>
-                </div>
-                
-                <!-- GAYANG-GAYA NAV LINKS (Solid background capsule block para sa Active link gamit ang tinukoy mong listahan) -->
-                <div class="hidden md:flex space-x-2 items-center text-[#3f4e60]">
-                    <!-- Home ang Active state block -->
-                    <a href="index.html" class="bg-[#112E81] text-white px-5 py-3 rounded-[4px] shadow-sm font-heading font-extrabold text-[14px] uppercase tracking-wider block transition-all">Home</a>              
-                    <a href="about.html" class="hover:bg-gray-100 hover:text-[#112E81] px-5 py-3 rounded-[4px] font-heading font-bold text-[14px] uppercase tracking-wider transition-all">About Us</a>
-                    <a href="projects.html" class="hover:bg-gray-100 hover:text-[#112E81] px-5 py-3 rounded-[4px] font-heading font-bold text-[14px] uppercase tracking-wider transition-all">Our Projects</a>
-                    <a href="careers.html" class="hover:bg-gray-100 hover:text-[#112E81] px-5 py-3 rounded-[4px] font-heading font-bold text-[14px] uppercase tracking-wider transition-all">Careers</a>
-                    <a href="contact.html" class="hover:bg-gray-100 hover:text-[#112E81] px-5 py-3 rounded-[4px] font-heading font-bold text-[14px] uppercase tracking-wider transition-all">Contact Us</a>
+                </div>                
+                <div class="hidden md:flex items-center gap-1 text-[#3f4e60]">
+                    <a href="index.html" class="bg-[#112E81] text-white px-4 rounded-[4px] shadow-sm font-heading font-bold text-[14px] uppercase tracking-wider transition-all flex items-center justify-center h-11">Home</a>              
+                    <a href="about.html" class="hover:bg-gray-100 hover:text-[#112E81] px-4 rounded-[4px] font-heading font-bold text-[14px] uppercase tracking-wider transition-all flex items-center justify-center h-11">About Us</a>
+                    <a href="projects.html" class="hover:bg-gray-100 hover:text-[#112E81] px-4 rounded-[4px] font-heading font-bold text-[14px] uppercase tracking-wider transition-all flex items-center justify-center h-11">Our Projects</a>
+                    <a href="careers.html" class="hover:bg-gray-100 hover:text-[#112E81] px-4 rounded-[4px] font-heading font-bold text-[14px] uppercase tracking-wider transition-all flex items-center justify-center h-11">Careers</a>
+                    <a href="contact.html" class="hover:bg-gray-100 hover:text-[#112E81] px-4 rounded-[4px] font-heading font-bold text-[14px] uppercase tracking-wider transition-all flex items-center justify-center h-11">Contact Us</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- MAIN PAGE CONTENT -->
     <main>
-
-        <!-- 1. HERO SCREEN (FULL IMAGE FLASHING WITH TEXT OVERLAY) -->
         <header id="home" class="relative h-[85vh] min-h-[580px] bg-black flex items-end overflow-hidden">
             
-            <!-- Background Image Layers -->
             <div id="slide-1" class="slide-bg absolute inset-0 bg-cover bg-center opacity-100" style="background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1920');"></div>
             <div id="slide-2" class="slide-bg absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=1920');"></div>
             <div id="slide-3" class="slide-bg absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1920');"></div>
-            <div id="slide-4" class="slide-bg absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('https://images.unsplash.com/photo-1555636222-cae831e670b3?q=80&w=1920');"></div>
-            
-            <!-- Dark Overlay Filter for readability -->
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/40 z-10"></div>
-            
-            <!-- Clean Text Overlay at the bottom -->
+            <div id="slide-4" class="slide-bg absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('https://images.unsplash.com/photo-1555636222-cae831e670b3?q=80&w=1920');"></div>           
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/40 z-10"></div>            
             <div class="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 text-left">
                 <span class="text-custom-lightbg uppercase tracking-widest font-heading font-bold text-xs block mb-2">Project Design & Asset Management</span>
                 <h1 id="project-title" class="text-2xl sm:text-4xl font-heading font-extrabold text-custom-white uppercase tracking-tight leading-tight">
                     The Currency Residential Skyscraper
                 </h1>
                 <p id="project-desc" class="text-gray-300 text-xs sm:text-sm max-w-2xl mt-2 font-medium">
-                    Isang premium corporate high-rise build na may structural fit-out engineering at modern spatial management pipelines.
+                    caption
                 </p>
             </div>
-
-            <!-- Carousel Slide Indicators (Dots) -->
             <div class="absolute bottom-6 right-8 z-20 flex space-x-2">
                 <div id="dot-0" class="h-2 w-2 rounded-full bg-custom-white transition-all duration-300"></div>
                 <div id="dot-1" class="h-2 w-2 rounded-full bg-custom-white/40 transition-all duration-300"></div>
@@ -107,13 +88,9 @@
                 <div id="dot-3" class="h-2 w-2 rounded-full bg-custom-white/40 transition-all duration-300"></div>
             </div>
         </header>
-
-        <!-- 2. WHO WE ARE & ANIMATED COUNTERS -->
         <section id="about" class="relative bg-custom-darkblue text-custom-white py-24 diagonal-split z-10 -mt-6">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                    
-                    <!-- Left Column: Who We Are -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">                   
                     <div class="lg:col-span-6 space-y-6">
                         <h2 class="text-3xl sm:text-4xl font-heading font-extrabold tracking-tight uppercase border-b-2 border-custom-lightbg/30 pb-4">
                             Who We Are
@@ -129,14 +106,11 @@
                                 Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
                             </a>
                         </div>
-                    </div>
-                    
-                    <!-- Right Column: Our Numbers and Counting (Animated Numbers) -->
+                    </div>                   
                     <div class="lg:col-span-6 lg:pl-8 space-y-8">
                         <h2 class="text-2xl sm:text-3xl font-heading font-bold tracking-tight uppercase text-right text-custom-lightbg">
                             Our Numbers <span class="text-custom-white block text-sm font-medium tracking-normal normal-case mt-1">and counting...</span>
-                        </h2>
-                        
+                        </h2>                       
                         <div class="space-y-6 text-right border-r-4 border-custom-blue pr-6">
                             <div>
                                 <div class="text-4xl sm:text-5xl font-heading font-extrabold text-custom-white tracking-tight">
@@ -174,13 +148,9 @@
                 </div>
             </div>
         </section>
-
-        <!-- 3. EXPERTISE -->
         <section id="expertise" class="py-24 bg-custom-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    
-                    <!-- Left Side Picture -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">                   
                     <div class="lg:col-span-5 relative group overflow-hidden shadow-xl rounded">
                         <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800" alt="Construction Layout" class="w-full h-[450px] object-cover object-center transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-custom-darkblue/80 via-transparent to-transparent"></div>
@@ -190,7 +160,6 @@
                         </div>
                     </div>
                     
-                    <!-- Right Side Content -->
                     <div class="lg:col-span-7 space-y-6">
                         <div class="flex items-center gap-2 text-custom-blue">
                             <i class="fa-solid fa-compass-drafting text-lg"></i>
@@ -211,13 +180,11 @@
                                 Learn More <i class="fa-solid fa-angle-right"></i>
                             </a>
                         </div>
-                    </div>
-                    
+                    </div>                   
                 </div>
             </div>
         </section>
 
-        <!-- 4. 6 SAMPLE PROJECTS -->
         <section id="projects" class="py-24 bg-gray-100 border-t border-gray-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
@@ -225,7 +192,6 @@
                     <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-custom-darkblue tracking-tight uppercase">6 Sample Projects</h2>
                     <div class="w-12 h-1 bg-custom-purple mx-auto mt-4"></div>
                 </div>
-                
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 shadow-lg rounded overflow-hidden">
                     <!-- Tiles -->
                     <div class="relative group h-72 overflow-hidden bg-black">
@@ -285,13 +251,10 @@
 
     </main>
 
-    <!-- 5. FOOTER FRAMEWORK -->
     <footer class="relative text-custom-white font-heading">
         
-        <!-- TOP DECORATIVE BLUE BAR -->
         <div class="bg-[#0f3294] h-10 w-full border-b border-white/10"></div>
         
-        <!-- FLOATING ARROW ON THE BORDER LINE -->
         <div class="absolute top-10 left-0 right-0 z-30">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                 <a href="#home" class="absolute right-4 sm:right-8 -top-6 bg-[#e06510] hover:bg-custom-white hover:text-[#e06510] h-12 w-12 rounded-full flex items-center justify-center shadow-md transition-all text-custom-white">
@@ -300,14 +263,11 @@
             </div>
         </div>
 
-        <!-- MAIN FOOTER BLOCK -->
         <div class="bg-custom-darkblue pt-20 pb-12">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
-                <!-- 3-Column Layout -->
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-16">
                     
-                    <!-- Left Column: Branding Logo Space -->
                     <div class="md:col-span-4 flex items-center gap-3">
                         <div class="h-12 w-12 bg-custom-white flex items-center justify-center rounded shadow">
                             <i class="fa-solid fa-trowel-bricks text-custom-darkblue text-2xl"></i>
@@ -318,7 +278,6 @@
                         </div>
                     </div>
                     
-                    <!-- Center Column: Address and Contacts -->
                     <div class="md:col-span-4 space-y-4 text-sm font-semibold tracking-wide">
                         <h4 class="text-xl font-extrabold uppercase text-custom-white">ADDRESS</h4>
                         <p class="text-gray-200 leading-relaxed font-normal font-sans text-xs sm:text-sm">
@@ -332,7 +291,6 @@
                         </p>
                     </div>
                     
-                    <!-- Right Column: Follow Us & Privacy Links -->
                     <div class="md:col-span-4 space-y-6">
                         <div class="space-y-3">
                             <h4 class="text-xl font-extrabold uppercase text-custom-white tracking-wide">FOLLOW US</h4>
@@ -352,7 +310,6 @@
                     
                 </div>
                 
-                <!-- Bottom Copyright Line -->
                 <div class="text-center text-xs sm:text-sm text-gray-300 font-sans font-normal tracking-wide border-t border-white/5 pt-8">
                     <p>&copy; 2021-2026 TOC Construction, Inc. All Rights Reserved.</p>
                 </div>
@@ -360,24 +317,23 @@
         </div>
     </footer>
 
-    <!-- INTERACTIVE JAVASCRIPT ENGINES -->
     <script>
         const projectsData = [
             {
                 title: "The Currency Residential Skyscraper",
-                desc: "Isang premium corporate high-rise build na may structural fit-out engineering at modern spatial management pipelines."
+                desc: "A premium corporate high-rise build featuring advanced structural fit-out engineering and modern spatial management pipelines."
             },
             {
                 title: "PrimeWater Utilities Plant Infrastructure",
-                desc: "Kumpletong mechanical utility treatment systems at state-of-the-art solid fluid extraction configurations."
+                desc: "Comprehensive mechanical utility treatment systems integrated with state-of-the-art solid fluid extraction configurations."
             },
             {
                 title: "Roma Cafe Spatial Fit-Out & Architectural Design",
-                desc: "Detalyadong indoor commercial aesthetic structures, complete spatial layout provisioning, at specialized dynamic masonry."
+                desc: "Detailed indoor commercial aesthetic structures, complete spatial layout provisioning, and specialized dynamic masonry."
             },
             {
                 title: "NoMo Lifestyle Commercial Mall Development",
-                desc: "Mega-scale architectural structure na may commercial spatial layouts, entertainment frames, at structural space integrity."
+                desc: "A mega-scale architectural structure highlighting versatile commercial spatial layouts, entertainment frames, and robust structural space integrity."
             }
         ];
 
@@ -401,8 +357,6 @@
 
         setInterval(flashNextProject, 3500);
         document.getElementById('dot-0').classList.add('w-4');
-
-        // COUNTER ENGINE
         function initAnimatedCounters() {
             const counters = document.querySelectorAll('.counter');
             
