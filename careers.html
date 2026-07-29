@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - TOC Construction Inc.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Vector Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif']
+                    },
+                    colors: {
+                        custom: {
+                            darkblue: '#112E81',
+                            purple: '#4647AE',
+                            blue: '#4382DF',
+                            lightbg: '#AACCD6',
+                            white: '#FFFFFF'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .diagonal-split {
+            clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+
+    <!-- NAVIGATION BAR (TOP) - EKSADONG COPY MULA SA HOME PAGE -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                <!-- Branding Logo Space -->
+                <div class="flex items-center gap-3">
+                    <div class="h-12 w-12 bg-custom-darkblue flex items-center justify-center rounded shadow">
+                        <i class="fa-solid fa-trowel-bricks text-custom-white text-2xl"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-heading font-extrabold text-2xl text-custom-darkblue tracking-tight leading-none">TOC</span>
+                        <span class="font-heading font-bold text-xs text-custom-blue tracking-widest mt-0.5">CONSTRUCTION</span>
+                    </div>
+                </div>
+                
+                <!-- GAYANG-GAYA NAV LINKS (Naka-Active Block ang Careers) -->
+                <div class="hidden md:flex space-x-2 items-center text-[#3f4e60]">
+                    <a href="index.html" class="hover:bg-gray-100 hover:text-[#112E81] px-5 py-3 rounded-[4px] font-heading font-bold text-[14px] uppercase tracking-wider transition-all">Home</a>
+                    <a href="about.html" class="hover:bg-gray-100 hover:text-[#112E81] px-5 py-3 rounded-[4px] font-heading font-bold text-[14px] uppercase tracking-wider transition-all">About Us</a>
+                    <a href="projects.html" class="hover:bg-gray-100 hover:text-[#112E81] px-5 py-3 rounded-[4px] font-heading font-bold text-[14px] uppercase tracking-wider transition-all">Our Projects</a>
+                    
+                    <!-- Careers Naka-Active ngayon -->
+                    <a href="careers.html" class="bg-[#112E81] text-white px-5 py-3 rounded-[4px] shadow-sm font-heading font-extrabold text-[14px] uppercase tracking-wider block transition-all">Careers</a>
+                    
+                    <a href="contact.html" class="hover:bg-gray-100 hover:text-[#112E81] px-5 py-3 rounded-[4px] font-heading font-bold text-[14px] uppercase tracking-wider transition-all">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN PAGE CONTENT -->
+    <main>
+
+        <!-- SUB-HERO BANNER (MGS Inspired Clean Headings) -->
+        <header class="relative h-[40vh] min-h-[280px] bg-black flex items-center overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1920');"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-custom-darkblue/90 via-custom-darkblue/40 to-transparent z-10"></div>
+            
+            <div class="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+                <span class="text-custom-lightbg uppercase tracking-widest font-heading font-bold text-xs block mb-2">Build Your Future With Us</span>
+                <h1 class="text-3xl sm:text-5xl font-heading font-extrabold text-custom-white uppercase tracking-tight">
+                    Join Our Expert Team
+                </h1>
+                <div class="w-16 h-1 bg-custom-blue mt-4"></div>
+            </div>
+        </header>
+
+        <!-- SECTION 1: INTRODUCTION & VALUE PROPOSITION -->
+        <section class="py-20 bg-custom-white">
+            <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
+                <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-custom-darkblue uppercase tracking-tight">
+                    Why Work at TOC Construction?
+                </h2>
+                <p class="text-gray-600 font-sans text-sm sm:text-base leading-relaxed max-w-3xl mx-auto">
+                    We believe our greatest asset is our people. Inspired by global industry standards, we offer a collaborative environment where engineers, architects, project managers, and dynamic professionals work hand-in-hand to reshape the Philippine infrastructure landscape.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 2: JOB OPENINGS GRID -->
+        <section class="py-16 bg-gray-100 border-t border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between mb-10">
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-heading font-extrabold text-custom-darkblue uppercase tracking-tight">Current Openings</h3>
+                        <p class="text-gray-500 text-xs mt-1">Explore our latest career paths and job opportunities.</p>
+                    </div>
+                    <span class="text-xs bg-custom-blue text-white font-heading font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">4 Active Roles</span>
+                </div>
+
+                <!-- Openings List Layout -->
+                <div class="grid grid-cols-1 gap-4">
+                    
+                    <!-- Job 1 -->
+                    <div class="bg-white p-6 rounded shadow-sm border-l-4 border-custom-darkblue flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 transition-transform hover:-translate-y-0.5">
+                        <div class="space-y-1">
+                            <h4 class="font-heading font-bold text-base text-custom-darkblue uppercase tracking-wide">Project Site Engineer</h4>
+                            <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-500 font-sans">
+                                <span><i class="fa-solid fa-location-dot text-custom-blue mr-1"></i> Las Piñas / Field Assignments</span>
+                                <span><i class="fa-solid fa-briefcase text-custom-purple mr-1"></i> Full-Time</span>
+                            </div>
+                        </div>
+                        <a href="#apply-form" class="inline-self-start sm:inline-self-auto bg-custom-darkblue hover:bg-custom-purple text-white font-heading font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition-all text-center">
+                            Apply Now
+                        </a>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="bg-white p-6 rounded shadow-sm border-l-4 border-custom-purple flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 transition-transform hover:-translate-y-0.5">
+                        <div class="space-y-1">
+                            <h4 class="font-heading font-bold text-base text-custom-darkblue uppercase tracking-wide">Quantity Surveyor</h4>
+                            <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-500 font-sans">
+                                <span><i class="fa-solid fa-location-dot text-custom-blue mr-1"></i> Corporate Office (Las Piñas)</span>
+                                <span><i class="fa-solid fa-briefcase text-custom-purple mr-1"></i> Full-Time</span>
+                            </div>
+                        </div>
+                        <a href="#apply-form" class="inline-self-start sm:inline-self-auto bg-custom-darkblue hover:bg-custom-purple text-white font-heading font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition-all text-center">
+                            Apply Now
+                        </a>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="bg-white p-6 rounded shadow-sm border-l-4 border-custom-darkblue flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 transition-transform hover:-translate-y-0.5">
+                        <div class="space-y-1">
+                            <h4 class="font-heading font-bold text-base text-custom-darkblue uppercase tracking-wide">Safety Officer (DOLE Accredited)</h4>
+                            <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-500 font-sans">
+                                <span><i class="fa-solid fa-location-dot text-custom-blue mr-1"></i> Mega Manila Project Locations</span>
+                                <span><i class="fa-solid fa-briefcase text-custom-purple mr-1"></i> Full-Time</span>
+                            </div>
+                        </div>
+                        <a href="#apply-form" class="inline-self-start sm:inline-self-auto bg-custom-darkblue hover:bg-custom-purple text-white font-heading font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition-all text-center">
+                            Apply Now
+                        </a>
+                    </div>
+
+                    <!-- Job 4 -->
+                    <div class="bg-white p-6 rounded shadow-sm border-l-4 border-custom-purple flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 transition-transform hover:-translate-y-0.5">
+                        <div class="space-y-1">
+                            <h4 class="font-heading font-bold text-base text-custom-darkblue uppercase tracking-wide">CAD Draftsman / Architectural Modeler</h4>
+                            <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-500 font-sans">
+                                <span><i class="fa-solid fa-location-dot text-custom-blue mr-1"></i> Corporate Office (Las Piñas)</span>
+                                <span><i class="fa-solid fa-briefcase text-custom-purple mr-1"></i> Project-Based</span>
+                            </div>
+                        </div>
+                        <a href="#apply-form" class="inline-self-start sm:inline-self-auto bg-custom-darkblue hover:bg-custom-purple text-white font-heading font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition-all text-center">
+                            Apply Now
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: THE APPLICATION PROCESS FLOW -->
+        <section class="py-20 bg-custom-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h3 class="text-2xl font-heading font-extrabold text-custom-darkblue tracking-tight uppercase">Our Hiring Pipeline</h3>
+                    <p class="text-gray-500 text-xs mt-1">Simple, straightforward steps to start your engineering career with us.</p>
+                    <div class="w-12 h-1 bg-custom-purple mx-auto mt-3"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center relative">
+                    <!-- Step 1 -->
+                    <div class="space-y-4">
+                        <div class="h-14 w-14 bg-custom-darkblue text-white rounded-full flex items-center justify-center mx-auto text-xl font-heading font-bold shadow-md">1</div>
+                        <h4 class="font-heading font-bold text-sm uppercase text-custom-darkblue">Submit Resume</h4>
+                        <p class="text-gray-500 text-xs font-sans px-4">Fill out our submission frame below with your up-to-date credentials.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="space-y-4">
+                        <div class="h-14 w-14 bg-custom-blue text-white rounded-full flex items-center justify-center mx-auto text-xl font-heading font-bold shadow-md">2</div>
+                        <h4 class="font-heading font-bold text-sm uppercase text-custom-darkblue">Panel Evaluation</h4>
+                        <p class="text-gray-500 text-xs font-sans px-4">Initial assessment and technical screening round with engineering managers.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="space-y-4">
+                        <div class="h-14 w-14 bg-custom-purple text-white rounded-full flex items-center justify-center mx-auto text-xl font-heading font-bold shadow-md">3</div>
+                        <h4 class="font-heading font-bold text-sm uppercase text-custom-darkblue">Onboarding Kickoff</h4>
+                        <p class="text-gray-500 text-xs font-sans px-4">Final contractual matching, site mapping orientation, and deployment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: APPLICATION FORM FRAME (MGS Style) -->
+        <section id="apply-form" class="relative bg-custom-darkblue text-custom-white py-24 diagonal-split z-10">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl sm:text-3xl font-heading font-extrabold uppercase tracking-tight text-custom-white">Application Form</h3>
+                    <p class="text-custom-lightbg text-xs mt-1 font-sans">Complete the fields below to directly interface with our HR department.</p>
+                </div>
+
+                <form class="space-y-5 bg-white text-gray-800 p-8 rounded shadow-lg font-sans text-sm">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Full Name *</label>
+                            <input type="text" placeholder="Juan Dela Cruz" required class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded focus:outline-none focus:border-custom-blue">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Email Address *</label>
+                            <input type="email" placeholder="juan@example.com" required class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded focus:outline-none focus:border-custom-blue">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Contact Number *</label>
+                            <input type="tel" placeholder="0917XXXXXXX" required class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded focus:outline-none focus:border-custom-blue">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Position Desired *</label>
+                            <select required class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded focus:outline-none focus:border-custom-blue appearance-none">
+                                <option value="">-- Choose Position --</option>
+                                <option>Project Site Engineer</option>
+                                <option>Quantity Surveyor</option>
+                                <option>Safety Officer</option>
+                                <option>CAD Draftsman</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Upload Resume / CV (PDF format) *</label>
+                        <input type="file" accept=".pdf" required class="w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded text-xs text-gray-500 file:mr-4 file:py-1.5 file:px-3 file:rounded file:border-0 file:text-xs file:font-heading file:font-bold file:bg-custom-blue file:text-white hover:file:bg-custom-purple cursor-pointer">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Short Cover Statement</label>
+                        <textarea rows="4" placeholder="Briefly describe your structural expertise or value addition..." class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded focus:outline-none focus:border-custom-blue"></textarea>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit" class="w-full bg-custom-blue hover:bg-custom-purple text-white font-heading font-bold text-xs uppercase tracking-widest py-3.5 rounded transition-all shadow-md">
+                            Submit Application
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER FRAMEWORK - EKSAKTONG COPY MULA SA HOME PAGE -->
+    <footer class="relative text-custom-white font-heading -mt-6 pt-6">
+        
+        <!-- TOP DECORATIVE BLUE BAR -->
+        <div class="bg-[#0f3294] h-10 w-full border-b border-white/10"></div>
+        
+        <!-- FLOATING ARROW -->
+        <div class="absolute top-10 left-0 right-0 z-30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <a href="#" class="absolute right-4 sm:right-8 -top-6 bg-[#e06510] hover:bg-custom-white hover:text-[#e06510] h-12 w-12 rounded-full flex items-center justify-center shadow-md transition-all text-custom-white">
+                    <i class="fa-solid fa-arrow-up text-xl"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MAIN FOOTER BLOCK -->
+        <div class="bg-custom-darkblue pt-20 pb-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-16">
+                    
+                    <!-- Left Column: Logo -->
+                    <div class="md:col-span-4 flex items-center gap-3">
+                        <div class="h-12 w-12 bg-custom-white flex items-center justify-center rounded shadow">
+                            <i class="fa-solid fa-trowel-bricks text-custom-darkblue text-2xl"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-3xl font-extrabold text-custom-white tracking-tight leading-none">TOC</span>
+                            <span class="text-xs font-bold text-custom-lightbg tracking-widest mt-0.5">CONSTRUCTION, INC.</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Center Column: Address -->
+                    <div class="md:col-span-4 space-y-4 text-sm font-semibold tracking-wide">
+                        <h4 class="text-xl font-extrabold uppercase text-custom-white">ADDRESS</h4>
+                        <p class="text-gray-200 leading-relaxed font-normal font-sans text-xs sm:text-sm">
+                            2F Starmall Annex, Pamplona III,<br>
+                            Alabang-Zapote Road<br>
+                            corner Doña Manuela Avenue,<br>
+                            Las Piñas City, 1740 Metro Manila<br>
+                            <span class="block mt-2 font-semibold">info@tocconstruction.com.ph</span>
+                            <span class="block text-gray-300 font-sans font-light mt-1">T: (63 2) 8814 4600</span>
+                            <span class="block text-gray-300 font-sans font-light">TF: (63 2) 8871 0743</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Right Column: Follow Us -->
+                    <div class="md:col-span-4 space-y-6">
+                        <div class="space-y-3">
+                            <h4 class="text-xl font-extrabold uppercase text-custom-white tracking-wide">FOLLOW US</h4>
+                            <div class="flex space-x-5 text-xl text-gray-200">
+                                <a href="#" class="hover:text-custom-lightbg transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="hover:text-custom-lightbg transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="hover:text-custom-lightbg transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="hover:text-custom-lightbg transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-2">
+                            <a href="#" class="text-xl font-extrabold uppercase text-custom-white hover:text-custom-lightbg transition-colors tracking-wide block">
+                                PRIVACY POLICY
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Copyright -->
+                <div class="text-center text-xs sm:text-sm text-gray-300 font-sans font-normal tracking-wide border-t border-white/5 pt-8">
+                    <p>&copy; 2021-2026 TOC Construction, Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
