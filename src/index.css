@@ -1,0 +1,467 @@
+/* --- Core Reset & Foundations --- */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: #1A202C;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* --- MGS Header / Navigation --- */
+.mgs-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.98);
+  border-bottom: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.mgs-nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mgs-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+/* Authentic Abstract MGS Double-Triangle Geometric Accent */
+.mgs-graphic-mark {
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+
+.mgs-mark-primary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 24px solid #4382DF;
+}
+
+.mgs-mark-accent {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 24px solid #4647AE;
+}
+
+.mgs-text-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.mgs-title-main {
+  font-weight: 900;
+  font-size: 1.9rem;
+  color: #112E81;
+  letter-spacing: -0.5px;
+}
+
+.mgs-title-sub {
+  font-weight: 800;
+  font-size: 0.65rem;
+  color: #718096;
+  letter-spacing: 2px;
+}
+
+.mgs-nav-links {
+  display: flex;
+  gap: 8px;
+}
+
+.mgs-link-item {
+  color: #112E81;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+.mgs-link-item:hover {
+  color: #4382DF;
+}
+
+.mgs-link-item.active-node {
+  color: #FFFFFF;
+  background-color: #112E81;
+}
+
+/* --- MGS Dynamic Hero Showcase --- */
+.mgs-hero-viewport {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(rgba(17, 46, 129, 0.3), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.mgs-hero-content-box {
+  max-width: 800px;
+  color: #FFFFFF;
+  z-index: 10;
+}
+
+.mgs-hero-badge {
+  display: inline-block;
+  background-color: #4382DF;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.mgs-hero-heading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin: 0 0 25px 0;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.mgs-hero-heading span {
+  color: #AACCD6;
+}
+
+.mgs-hero-button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.mgs-btn-primary {
+  background-color: #112E81;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  letter-spacing: 1px;
+  transition: background 0.2s;
+}
+
+.mgs-btn-primary:hover {
+  background-color: #4647AE;
+}
+
+.mgs-btn-outline {
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+}
+
+.mgs-btn-outline:hover {
+  background-color: #FFFFFF;
+  color: #112E81;
+}
+
+/* Linear Ribbon Base Element */
+.mgs-linear-ribbon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  background: linear-gradient(90deg, #112E81 0%, #4647AE 35%, #4382DF 70%, #AACCD6 100%);
+  z-index: 20;
+}
+
+/* --- MGS Structural Corporate Layout Section --- */
+.mgs-layout-section {
+  padding: 120px 0;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.mgs-layout-section.alt-bg {
+  background-color: #F8FAFC;
+}
+
+.mgs-section-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* Standard MGS Header Lockups */
+.mgs-section-header-block {
+  margin-bottom: 60px;
+}
+
+.mgs-pre-title {
+  color: #4382DF;
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.mgs-main-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #112E81;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.mgs-title-underline-strip {
+  width: 60px;
+  height: 5px;
+  background-color: #4647AE;
+  margin-top: 15px;
+}
+
+/* --- About Grid Array --- */
+.mgs-about-split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.mgs-about-body-text {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: #4A5568;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.mgs-about-image-frame {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-bottom: 12px solid #112E81;
+}
+
+.mgs-about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- MGS Real-Time Metrics --- */
+.mgs-metrics-bar {
+  background-color: #112E81;
+  color: #FFFFFF;
+  padding: 80px 0;
+}
+
+.mgs-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.mgs-metric-node {
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px 0;
+}
+
+.mgs-metric-node.terminal-node {
+  border-right: none;
+}
+
+.mgs-metric-numeric {
+  font-size: 3.75rem;
+  font-weight: 900;
+  color: #AACCD6;
+  margin: 0 0 10px 0;
+  line-height: 1;
+}
+
+.mgs-metric-caption {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/* --- Portfolio Grid Blocks --- */
+.mgs-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.mgs-portfolio-card {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.mgs-portfolio-card:hover .mgs-portfolio-img-layer {
+  transform: scale(1.06);
+}
+
+.mgs-portfolio-img-layer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.mgs-portfolio-shade-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(transparent, rgba(17, 46, 129, 0.98));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 35px;
+  color: #FFFFFF;
+}
+
+.mgs-portfolio-tag {
+  color: #AACCD6;
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+}
+
+.mgs-portfolio-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* --- Corporate Footer Layout --- */
+.mgs-footer-block {
+  background-color: #0B1E54;
+  color: #FFFFFF;
+  padding: 90px 0 40px 0;
+  border-top: 6px solid #4382DF;
+}
+
+.mgs-footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 60px;
+}
+
+.mgs-footer-paragraph {
+  color: #A0AEC0;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.mgs-footer-header-text {
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 0 25px 0;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #4647AE;
+  padding-bottom: 8px;
+}
+
+.mgs-footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mgs-footer-a {
+  color: #CBD5E0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.mgs-footer-a:hover {
+  color: #4382DF;
+}
+
+.mgs-footer-contact-row {
+  color: #CBD5E0;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.mgs-footer-base {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.mgs-footer-legal {
+  display: flex;
+  gap: 30px;
+}
+
+.mgs-footer-span {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.mgs-footer-span:hover {
+  color: #FFFFFF;
+}
