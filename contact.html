@@ -31,13 +31,10 @@
             }
         }
     </script>
-    <style>
-        .diagonal-split {
-            clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
-        }
-    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased font-sans">
+    
+    <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
         <div class="max-w-full mx-auto px-6 sm:px-10 lg:px-12">
             <div class="flex justify-between h-24 items-center">                
@@ -60,92 +57,100 @@
             </div>
         </div>
     </nav>
+
     <main>
-        <header class="relative h-[35vh] min-h-[260px] bg-black flex items-center overflow-hidden">
+        <!-- Hero Header (Get In Touch Section) -->
+        <header class="relative h-[45vh] min-h-[320px] bg-black flex items-center overflow-hidden">
             <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url('https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=1920');"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-custom-darkblue/90 via-custom-darkblue/50 to-transparent z-10"></div>
-            <div class="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
-                <span class="text-custom-lightbg uppercase tracking-widest font-heading font-bold text-xs block mb-2">Connect With Us</span>
-                <h1 class="text-3xl sm:text-5xl font-heading font-extrabold text-custom-white uppercase tracking-tight">
+            <div class="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 text-left">
+                <span class="text-custom-lightbg uppercase tracking-widest font-heading font-bold text-sm block mb-3">Connect With Us</span>
+                <h1 class="text-4xl sm:text-6xl font-heading font-extrabold text-custom-white uppercase tracking-tight">
                     Get In Touch
                 </h1>
-                <div class="w-16 h-1 bg-custom-blue mt-4"></div>
+                <div class="w-24 h-1.5 bg-custom-blue mt-6"></div>
             </div>
         </header>
+
+        <!-- Main Content Area -->
         <section class="py-24 bg-custom-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">                    
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">                     
+                    
+                    <!-- Left Side: Contact Information -->
                     <div class="lg:col-span-5 space-y-10">
                         <div class="space-y-4">
                             <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-custom-darkblue tracking-tight uppercase">
                                 Contact Information
                             </h2>
-                            <p class="text-gray-500 text-xs sm:text-sm leading-relaxed font-sans">
+                            <p class="text-gray-600 text-sm sm:text-base leading-relaxed font-sans">
                                 Do you have any questions about our services, structural partnerships, or current bidding projects? Feel free to get in touch with us.
                             </p>
                             <div class="w-12 h-1 bg-custom-purple"></div>
                         </div>
                         <div class="space-y-6 font-sans">
                             <div class="flex gap-4">
-                                <div class="h-10 w-10 shrink-0 bg-gray-100 border border-gray-200 text-custom-darkblue rounded flex items-center justify-center shadow-sm">
-                                    <i class="fa-solid fa-map-location-dot text-lg"></i>
+                                <div class="h-12 w-12 shrink-0 bg-gray-100 border border-gray-200 text-custom-darkblue rounded-lg flex items-center justify-center shadow-sm">
+                                    <i class="fa-solid fa-map-location-dot text-xl"></i>
                                 </div>
                                 <div class="space-y-1">
-                                    <h4 class="font-heading font-bold text-xs uppercase text-custom-darkblue tracking-wide">Principal Office Address</h4>
-                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                        2F Starmall Annex, Pamplona III, Alabang-Zapote Road corner Doña Manuela Avenue, Las Piñas City, 1740 Metro Manila
+                                    <h4 class="font-heading font-bold text-sm uppercase text-custom-darkblue tracking-wide">Principal Office Address</h4>
+                                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                                        Unit 415, 6772 Ayala Ave, Makati City, Metro Manila, Philippines
                                     </p>
                                 </div>
                             </div>
                             <div class="flex gap-4">
-                                <div class="h-10 w-10 shrink-0 bg-gray-100 border border-gray-200 text-custom-purple rounded flex items-center justify-center shadow-sm">
-                                    <i class="fa-solid fa-phone-volume text-lg"></i>
+                                <div class="h-12 w-12 shrink-0 bg-gray-100 border border-gray-200 text-custom-purple rounded-lg flex items-center justify-center shadow-sm">
+                                    <i class="fa-solid fa-phone-volume text-xl"></i>
                                 </div>
                                 <div class="space-y-1">
-                                    <h4 class="font-heading font-bold text-xs uppercase text-custom-darkblue tracking-wide">Trunklines & Fax</h4>
-                                    <p class="text-gray-600 text-xs sm:text-sm">
-                                        <span class="block">Tel: (63 2) 8814 4600</span>
-                                        <span class="block">Fax: (63 2) 8871 0743</span>
+                                    <h4 class="font-heading font-bold text-sm uppercase text-custom-darkblue tracking-wide">Trunklines & Fax</h4>
+                                    <p class="text-gray-600 text-sm sm:text-base">
+                                        <span class="block">Tel: +63 (02) 0000-0000</span>
+                                        <span class="block">Fax: +63 (02) 1111-1111</span>
                                     </p>
                                 </div>
                             </div>
                             <div class="flex gap-4">
-                                <div class="h-10 w-10 shrink-0 bg-gray-100 border border-gray-200 text-custom-blue rounded flex items-center justify-center shadow-sm">
-                                    <i class="fa-solid fa-envelope-open-text text-lg"></i>
+                                <div class="h-12 w-12 shrink-0 bg-gray-100 border border-gray-200 text-custom-blue rounded-lg flex items-center justify-center shadow-sm">
+                                    <i class="fa-solid fa-envelope-open-text text-xl"></i>
                                 </div>
                                 <div class="space-y-1">
-                                    <h4 class="font-heading font-bold text-xs uppercase text-custom-darkblue tracking-wide">Email Correspondence</h4>
-                                    <p class="text-gray-600 text-xs sm:text-sm font-semibold text-custom-blue">
+                                    <h4 class="font-heading font-bold text-sm uppercase text-custom-darkblue tracking-wide">Email Correspondence</h4>
+                                    <p class="text-gray-600 text-sm sm:text-base font-semibold text-custom-blue">
                                         info@tocconstruction.com.ph
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>                    
-                    <div class="lg:col-span-7 bg-gray-50 border border-gray-200 rounded p-8 sm:p-10 shadow-sm">
-                        <div class="mb-6">
-                            <h3 class="text-xl font-heading font-bold uppercase text-custom-darkblue tracking-tight">Send a Message</h3>
-                            <p class="text-gray-500 text-xs mt-0.5 font-sans">Complete the from below and our team will respond within 24-48 hours.</p>
+                    
+                    <!-- Right Side: Send a Message Form -->
+                    <div class="lg:col-span-7 bg-white border border-gray-200 rounded-xl p-8 sm:p-10 shadow-md">
+                        <div class="mb-8">
+                            <h3 class="text-xl sm:text-2xl font-heading font-bold uppercase text-custom-darkblue tracking-tight">Send a Message</h3>
+                            <p class="text-gray-500 text-sm mt-1 font-sans">Complete the form below and our team will respond within 24-48 hours.</p>
                         </div>
-                        <form class="space-y-4 font-sans text-sm">
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <form class="space-y-5 font-sans text-base">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                 <div>
-                                    <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Full Name *</label>
-                                    <input type="text" placeholder="Juan Dela Cruz" required class="w-full px-4 py-2.5 bg-white border border-gray-300 rounded focus:outline-none focus:border-custom-blue text-xs sm:text-sm">
+                                    <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Full Name *</label>
+                                    <input type="text" placeholder="Juan Dela Cruz" required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
                                 </div>
                                 <div>
-                                    <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Email Address *</label>
-                                    <input type="email" placeholder="juan@example.com" required class="w-full px-4 py-2.5 bg-white border border-gray-300 rounded focus:outline-none focus:border-custom-blue text-xs sm:text-sm">
+                                    <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Email Address *</label>
+                                    <input type="email" placeholder="juan@example.com" required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
                                 </div>
                             </div>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                 <div>
-                                    <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Contact Number</label>
-                                    <input type="tel" placeholder="0917XXXXXXX" class="w-full px-4 py-2.5 bg-white border border-gray-300 rounded focus:outline-none focus:border-custom-blue text-xs sm:text-sm">
+                                    <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Contact Number</label>
+                                    <input type="tel" placeholder="0917XXXXXXX" class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
                                 </div>
                                 <div>
-                                    <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Inquiry Type *</label>
-                                    <select required class="w-full px-4 py-2.5 bg-white border border-gray-300 rounded focus:outline-none focus:border-custom-blue text-xs sm:text-sm appearance-none">
+                                    <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Inquiry Type *</label>
+                                    <select required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue bg-white">
                                         <option value="">-- Select Subject Option --</option>
                                         <option>General Quotation & Bidding</option>
                                         <option>Project Partnership / Subcontracting</option>
@@ -156,17 +161,17 @@
                             </div>
 
                             <div>
-                                <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Subject Headline *</label>
-                                <input type="text" placeholder="Brief summary of your message..." required class="w-full px-4 py-2.5 bg-white border border-gray-300 rounded focus:outline-none focus:border-custom-blue text-xs sm:text-sm">
+                                <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Subject Headline *</label>
+                                <input type="text" placeholder="Brief summary of your message..." required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
                             </div>
 
                             <div>
-                                <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Message Body *</label>
-                                <textarea rows="5" placeholder="Write your message or structural specification..." required class="w-full px-4 py-2.5 bg-white border border-gray-300 rounded focus:outline-none focus:border-custom-blue text-xs sm:text-sm"></textarea>
+                                <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Message Body *</label>
+                                <textarea rows="5" placeholder="Write your message or structural specification..." required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue"></textarea>
                             </div>
 
-                            <div class="pt-2">
-                                <button type="submit" class="w-full bg-custom-darkblue hover:bg-custom-purple text-white font-heading font-bold text-xs uppercase tracking-widest py-3.5 rounded transition-all shadow shadow-custom-darkblue/20">
+                            <div class="pt-3">
+                                <button type="submit" class="w-full bg-custom-darkblue hover:bg-custom-purple text-white font-heading font-bold text-sm uppercase tracking-widest py-4 rounded-lg transition-all shadow-md">
                                     Send Inquiry
                                 </button>
                             </div>
@@ -176,19 +181,26 @@
                 </div>
             </div>
         </section>
-        <section class="w-full h-[450px] bg-gray-200 border-t border-gray-300 overflow-hidden relative">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.856976695276!2d120.98223407604516!3d14.435451280590815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d1ecda551a3b%3A0xe2be19b99a6d0ef0!2sStarmall%20Las%20Pi%C3%B1as!5e0!3m2!1sen!2sph!4v1710000000000!5m2!1sen!2sph" 
-                width="100%" 
-                height="100%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"
-                class="absolute inset-0">
-            </iframe>
+
+        <!-- Map Section (UPDATED: Binawasan ang space sa gilid para pantay sa nav bar alignment) -->
+        <section class="w-full bg-custom-white pb-24">
+            <div class="max-w-full mx-auto px-6 sm:px-10 lg:px-12">
+                <div class="w-full h-[450px] bg-gray-200 border border-gray-300 rounded-xl overflow-hidden shadow-lg">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.332345090708!2d121.01358997604732!3d14.56011408169123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c908cf442cc9%3A0x6bda190e2cbbf6e4!2s6772%20Ayala%20Ave%2C%20Makati%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1720000000000!5m2!1sen!2sph" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer class="relative text-custom-white font-heading pt-6">        
         <div class="bg-[#0f3294] h-10 w-full border-b border-white/10"></div>        
         <div class="absolute top-10 left-0 right-0 z-30">

@@ -32,9 +32,6 @@
         }
     </script>
     <style>
-        .diagonal-split {
-            clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
-        }
         .slide-bg {
             transition: opacity 1s ease-in-out;
         }
@@ -94,7 +91,8 @@
             </div>
         </header>
 
-        <section id="about" class="relative bg-[#112E81] text-white py-24 diagonal-split z-10 -mt-6">
+        <!-- Tinanggal ang diagonal-split at pinantay ang hugis ng background sa baba -->
+        <section id="about" class="relative bg-[#112E81] text-white py-24 z-10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                     
@@ -205,55 +203,56 @@
                     <div class="w-12 h-1 bg-[#4647AE] mx-auto mt-4"></div>
                 </div>
                 
+                <!-- Ginawang clickable gamit ang <a> tags ang bawat card papuntang projects.html -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 shadow-lg rounded overflow-hidden">
-                    <div class="relative group h-72 overflow-hidden bg-black">
+                    <a href="projects.html" class="relative group h-72 overflow-hidden bg-black block">
                         <img src="https://images.unsplash.com/photo-1535732820275-9ffd99922227?q=80&w=600" alt="Land Development" class="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
                             <h3 class="text-white font-heading font-bold text-xl uppercase tracking-tight">Land Development</h3>
                             <p class="text-[#AACCD6] text-xs font-semibold mt-1 flex items-center gap-1"><i class="fa-solid fa-map-location-dot"></i> Greenfield Sector Subdivision</p>
                         </div>
-                    </div>
-                    <div class="relative group h-72 overflow-hidden bg-black">
+                    </a>
+                    <a href="projects.html" class="relative group h-72 overflow-hidden bg-black block">
                         <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=600" alt="Housing" class="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
                             <h3 class="text-white font-heading font-bold text-xl uppercase tracking-tight">Housing</h3>
                             <p class="text-[#AACCD6] text-xs font-semibold mt-1 flex items-center gap-1"><i class="fa-solid fa-house-chimney"></i> Eco-Modern Residential Complex</p>
                         </div>
-                    </div>
-                    <div class="relative group h-72 overflow-hidden bg-black">
+                    </a>
+                    <a href="projects.html" class="relative group h-72 overflow-hidden bg-black block">
                         <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=600" alt="Residential Building" class="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
                             <h3 class="text-white font-heading font-bold text-xl uppercase tracking-tight">Residential Building</h3>
                             <p class="text-[#AACCD6] text-xs font-semibold mt-1 flex items-center gap-1"><i class="fa-solid fa-building"></i> Apex Heights Skyscraper</p>
                         </div>
-                    </div>
-                    <div class="relative group h-72 overflow-hidden bg-black">
+                    </a>
+                    <a href="projects.html" class="relative group h-72 overflow-hidden bg-black block">
                         <img src="https://images.unsplash.com/photo-1555636222-cae831e670b3?q=80&w=600" alt="Commercial Building" class="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
                             <h3 class="text-white font-heading font-bold text-xl uppercase tracking-tight">Commercial Building</h3>
                             <p class="text-[#AACCD6] text-xs font-semibold mt-1 flex items-center gap-1"><i class="fa-solid fa-shop"></i> Meridien Lifestyle Square</p>
                         </div>
-                    </div>
-                    <div class="relative group h-72 overflow-hidden bg-black">
+                    </a>
+                    <a href="projects.html" class="relative group h-72 overflow-hidden bg-black block">
                         <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=600" alt="Fit out" class="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
                             <h3 class="text-white font-heading font-bold text-xl uppercase tracking-tight">Fit Out</h3>
                             <p class="text-[#AACCD6] text-xs font-semibold mt-1 flex items-center gap-1"><i class="fa-solid fa-chair"></i> Artisan Roasters Hub</p>
                         </div>
-                    </div>
-                    <div class="relative group h-72 overflow-hidden bg-black">
+                    </a>
+                    <a href="projects.html" class="relative group h-72 overflow-hidden bg-black block">
                         <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=600" alt="Utilities" class="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
                             <h3 class="text-white font-heading font-bold text-xl uppercase tracking-tight">Utilities</h3>
                             <p class="text-[#AACCD6] text-xs font-semibold mt-1 flex items-center gap-1"><i class="fa-solid fa-faucet-drip"></i> AquaFlow Utility Pipeline System</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -354,7 +353,6 @@
         function flashNextProject() {
             document.getElementById(`slide-${currentSlide + 1}`).classList.replace('opacity-100', 'opacity-0');
             
-            // Fixed reference to Tailwind configurations
             const currentDot = document.getElementById(`dot-${currentSlide}`);
             currentDot.classList.remove('bg-white', 'w-4');
             currentDot.classList.add('bg-white/40');

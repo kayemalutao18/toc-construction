@@ -31,11 +31,6 @@
             }
         }
     </script>
-    <style>
-        .diagonal-split {
-            clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
-        }
-    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased font-sans">
     
@@ -64,17 +59,17 @@
     </nav>
 
     <main>
-        <!-- Hero Header -->
-        <header class="relative h-[40vh] min-h-[280px] bg-black flex items-center overflow-hidden">
+        <!-- Hero Header (UPDATED: Ginaya ang size, padding, at full alignment ng contact page hero header) -->
+        <header class="relative h-[45vh] min-h-[320px] bg-black flex items-center overflow-hidden">
             <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1920');"></div>
-            <div class="absolute inset-0 bg-gradient-to-r from-custom-darkblue/90 via-custom-darkblue/40 to-transparent z-10"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-custom-darkblue/90 via-custom-darkblue/50 to-transparent z-10"></div>
             
-            <div class="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
-                <span class="text-custom-lightbg uppercase tracking-widest font-heading font-bold text-xs block mb-2">Build Your Future With Us</span>
-                <h1 class="text-3xl sm:text-5xl font-heading font-extrabold text-custom-white uppercase tracking-tight">
+            <div class="relative z-20 w-full max-w-full mx-auto px-6 sm:px-10 lg:px-12 text-left">
+                <span class="text-custom-lightbg uppercase tracking-widest font-heading font-bold text-sm block mb-3">Build Your Future With Us</span>
+                <h1 class="text-4xl sm:text-6xl font-heading font-extrabold text-custom-white uppercase tracking-tight">
                     Join Our Expert Team
                 </h1>
-                <div class="w-16 h-1 bg-custom-blue mt-4"></div>
+                <div class="w-24 h-1.5 bg-custom-blue mt-6"></div>
             </div>
         </header>
 
@@ -190,32 +185,32 @@
         </section>
 
         <!-- Application Form -->
-        <section id="apply-form" class="relative bg-custom-darkblue text-custom-white py-24 diagonal-split z-10">
+        <section id="apply-form" class="relative bg-custom-darkblue text-custom-white py-24 z-10">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-                <div class="text-center mb-10">
-                    <h3 class="text-2xl sm:text-3xl font-heading font-extrabold uppercase tracking-tight text-custom-white">Application Form</h3>
-                    <p class="text-custom-lightbg text-xs mt-1 font-sans">Complete the fields below to directly interface with our HR department.</p>
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl sm:text-4xl font-heading font-extrabold uppercase tracking-tight text-custom-white mb-3">Application Form</h3>
+                    <p class="text-custom-lightbg text-sm sm:text-base font-sans leading-relaxed">Complete the fields below to directly interface with our HR department.</p>
                 </div>
-                <form class="space-y-5 bg-white text-gray-800 p-8 rounded shadow-lg font-sans text-sm">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <form class="space-y-6 bg-white text-gray-800 p-8 sm:p-10 rounded-xl shadow-2xl font-sans text-base">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Full Name *</label>
-                            <input type="text" placeholder="Juan Dela Cruz" required class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded focus:outline-none focus:border-custom-blue">
+                            <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Full Name *</label>
+                            <input type="text" placeholder="Juan Dela Cruz" required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
                         </div>
                         <div>
-                            <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Email Address *</label>
-                            <input type="email" placeholder="juan@example.com" required class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded focus:outline-none focus:border-custom-blue">
+                            <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Email Address *</label>
+                            <input type="email" placeholder="juan@example.com" required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Contact Number *</label>
-                            <input type="tel" placeholder="0917XXXXXXX" required class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded focus:outline-none focus:border-custom-blue">
+                            <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Contact Number *</label>
+                            <input type="tel" placeholder="0917XXXXXXX" required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
                         </div>
                         <div class="relative">
-                            <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Position Desired *</label>
-                            <select required class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded focus:outline-none focus:border-custom-blue bg-white">
+                            <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Position Desired *</label>
+                            <select required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue bg-white">
                                 <option value="">-- Choose Position --</option>
                                 <option>Project Site Engineer</option>
                                 <option>Quantity Surveyor</option>
@@ -226,17 +221,17 @@
                     </div>
 
                     <div>
-                        <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Upload Resume / CV (PDF format) *</label>
-                        <input type="file" accept=".pdf" required class="w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded text-xs text-gray-500 file:mr-4 file:py-1.5 file:px-3 file:rounded file:border-0 file:text-xs file:font-heading file:font-bold file:bg-custom-blue file:text-white hover:file:bg-custom-purple cursor-pointer">
+                        <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Upload Resume / CV (PDF format) *</label>
+                        <input type="file" accept=".pdf" required class="w-full px-5 py-3 bg-gray-50 border border-gray-300 rounded-lg text-sm text-gray-500 file:mr-4 file:py-2.5 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-heading file:font-bold file:bg-custom-blue file:text-white hover:file:bg-custom-purple cursor-pointer">
                     </div>
 
                     <div>
-                        <label class="block text-xs font-heading font-bold text-custom-darkblue uppercase mb-1">Short Cover Statement</label>
-                        <textarea rows="4" placeholder="Briefly describe your structural expertise or value addition..." class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded focus:outline-none focus:border-custom-blue"></textarea>
+                        <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Short Cover Statement</label>
+                        <textarea rows="5" placeholder="Briefly describe your structural expertise or value addition..." class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue"></textarea>
                     </div>
 
-                    <div class="pt-2">
-                        <button type="submit" class="w-full bg-custom-blue hover:bg-custom-purple text-white font-heading font-bold text-xs uppercase tracking-widest py-3.5 rounded transition-all shadow-md">
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-custom-blue hover:bg-custom-purple text-white font-heading font-bold text-sm uppercase tracking-widest py-4 rounded-lg transition-all shadow-md">
                             Submit Application
                         </button>
                     </div>
@@ -246,7 +241,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="relative text-custom-white font-heading -mt-6 pt-6">        
+    <footer class="relative text-custom-white font-heading pt-6">        
         <div class="bg-[#0f3294] h-10 w-full border-b border-white/10"></div>        
         <div class="absolute top-10 left-0 right-0 z-30">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
