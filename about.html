@@ -32,20 +32,25 @@
         }
     </script>
     <style>
-        /* Custom styling para sa scrollbar ng partners list */
-        .custom-scrollbar::-webkit-scrollbar {
-            height: 8px;
+        /* CSS Keyframes para sa Automatic Continuous Scrolling */
+        @keyframes scroll-infinite {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
         }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 4px;
+
+        .partner-track {
+            display: flex;
+            width: max-content;
+            animation: scroll-infinite 25s linear infinite;
         }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: rgba(255, 255, 255, 0.5);
+
+        /* Humihinto ang scroll kapag in-hover ang mouse */
+        .partner-track:hover {
+            animation-play-state: paused;
         }
     </style>
 </head>
@@ -76,7 +81,7 @@
     </nav>
 
     <main>
-        <!-- Hero Header (UPDATED: Pinalaki ang text size at ginawang full alignment gaya ng contact/careers page) -->
+        <!-- Hero Header -->
         <header class="relative h-[45vh] min-h-[320px] bg-black flex items-center overflow-hidden">
             <div class="absolute inset-0 bg-cover bg-center opacity-60" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1920');"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-custom-darkblue/90 via-custom-darkblue/50 to-transparent z-10"></div>            
@@ -136,50 +141,78 @@
             </div>
         </section>
 
-        <!-- Partners Section -->
-        <section id="partners" class="bg-custom-darkblue text-custom-white py-24 z-10">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
+        <!-- Partners Section (AUTOMATIC SCROLLING) -->
+        <section id="partners" class="bg-custom-darkblue text-custom-white py-24 z-10 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+                <div class="text-center max-w-3xl mx-auto">
                     <span class="text-custom-lightbg font-heading font-bold text-xs uppercase tracking-widest block mb-2">Alliances & Trusts</span>
                     <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-custom-white tracking-tight uppercase">Our Partners</h2>
                     <div class="w-12 h-1 bg-custom-blue mx-auto mt-4"></div>
                 </div>
+            </div>
 
-                <!-- Scrollable list wrapper -->
-                <div class="flex overflow-x-auto gap-6 items-center pb-6 custom-scrollbar snap-x snap-mandatory">
+            <!-- Auto-Scrolling Marquee Wrapper -->
+            <div class="w-full overflow-hidden">
+                <div class="partner-track gap-6 py-4 px-3">
                     
-                    <!-- Partner 1 -->
-                    <div class="bg-custom-white hover:bg-gray-50 min-w-[250px] md:min-w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group snap-center transform hover:-translate-y-1">
+                    <!-- First Set of Partners -->
+                    <div class="bg-custom-white hover:bg-gray-50 w-[250px] md:w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group shrink-0 transform hover:-translate-y-1">
                         <i class="fa-solid fa-building text-3xl text-custom-darkblue group-hover:scale-110 transition-transform"></i>
                         <span class="font-heading font-extrabold text-xs uppercase tracking-wider text-custom-darkblue">Camella Homes</span>
                     </div>
-                    
-                    <!-- Partner 2 -->
-                    <div class="bg-custom-white hover:bg-gray-50 min-w-[250px] md:min-w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group snap-center transform hover:-translate-y-1">
+
+                    <div class="bg-custom-white hover:bg-gray-50 w-[250px] md:w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group shrink-0 transform hover:-translate-y-1">
                         <i class="fa-solid fa-faucet text-3xl text-custom-darkblue group-hover:scale-110 transition-transform"></i>
                         <span class="font-heading font-extrabold text-xs uppercase tracking-wider text-custom-darkblue">PrimeWater</span>
                     </div>
-                    
-                    <!-- Partner 3 -->
-                    <div class="bg-custom-white hover:bg-gray-50 min-w-[250px] md:min-w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group snap-center transform hover:-translate-y-1">
+
+                    <div class="bg-custom-white hover:bg-gray-50 w-[250px] md:w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group shrink-0 transform hover:-translate-y-1">
                         <i class="fa-solid fa-store text-3xl text-custom-darkblue group-hover:scale-110 transition-transform"></i>
                         <span class="font-heading font-extrabold text-xs uppercase tracking-wider text-custom-darkblue">Vista Malls</span>
                     </div>
-                    
-                    <!-- Partner 4 -->
-                    <div class="bg-custom-white hover:bg-gray-50 min-w-[250px] md:min-w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group snap-center transform hover:-translate-y-1">
+
+                    <div class="bg-custom-white hover:bg-gray-50 w-[250px] md:w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group shrink-0 transform hover:-translate-y-1">
                         <i class="fa-solid fa-city text-3xl text-custom-darkblue group-hover:scale-110 transition-transform"></i>
                         <span class="font-heading font-extrabold text-xs uppercase tracking-wider text-custom-darkblue">Golden MV</span>
                     </div>
 
-                    <!-- Partner 5 -->
-                    <div class="bg-custom-white hover:bg-gray-50 min-w-[250px] md:min-w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group snap-center transform hover:-translate-y-1">
+                    <div class="bg-custom-white hover:bg-gray-50 w-[250px] md:w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group shrink-0 transform hover:-translate-y-1">
                         <i class="fa-solid fa-house text-3xl text-custom-darkblue group-hover:scale-110 transition-transform"></i>
                         <span class="font-heading font-extrabold text-xs uppercase tracking-wider text-custom-darkblue">Bria Homes</span>
                     </div>
 
-                    <!-- Partner 6 -->
-                    <div class="bg-custom-white hover:bg-gray-50 min-w-[250px] md:min-w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group snap-center transform hover:-translate-y-1">
+                    <div class="bg-custom-white hover:bg-gray-50 w-[250px] md:w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group shrink-0 transform hover:-translate-y-1">
+                        <i class="fa-solid fa-tents text-3xl text-custom-darkblue group-hover:scale-110 transition-transform"></i>
+                        <span class="font-heading font-extrabold text-xs uppercase tracking-wider text-custom-darkblue">Lumina Homes</span>
+                    </div>
+
+                    <!-- Duplicate Set for Seamless Loop -->
+                    <div class="bg-custom-white hover:bg-gray-50 w-[250px] md:w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group shrink-0 transform hover:-translate-y-1">
+                        <i class="fa-solid fa-building text-3xl text-custom-darkblue group-hover:scale-110 transition-transform"></i>
+                        <span class="font-heading font-extrabold text-xs uppercase tracking-wider text-custom-darkblue">Camella Homes</span>
+                    </div>
+
+                    <div class="bg-custom-white hover:bg-gray-50 w-[250px] md:w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group shrink-0 transform hover:-translate-y-1">
+                        <i class="fa-solid fa-faucet text-3xl text-custom-darkblue group-hover:scale-110 transition-transform"></i>
+                        <span class="font-heading font-extrabold text-xs uppercase tracking-wider text-custom-darkblue">PrimeWater</span>
+                    </div>
+
+                    <div class="bg-custom-white hover:bg-gray-50 w-[250px] md:w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group shrink-0 transform hover:-translate-y-1">
+                        <i class="fa-solid fa-store text-3xl text-custom-darkblue group-hover:scale-110 transition-transform"></i>
+                        <span class="font-heading font-extrabold text-xs uppercase tracking-wider text-custom-darkblue">Vista Malls</span>
+                    </div>
+
+                    <div class="bg-custom-white hover:bg-gray-50 w-[250px] md:w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group shrink-0 transform hover:-translate-y-1">
+                        <i class="fa-solid fa-city text-3xl text-custom-darkblue group-hover:scale-110 transition-transform"></i>
+                        <span class="font-heading font-extrabold text-xs uppercase tracking-wider text-custom-darkblue">Golden MV</span>
+                    </div>
+
+                    <div class="bg-custom-white hover:bg-gray-50 w-[250px] md:w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group shrink-0 transform hover:-translate-y-1">
+                        <i class="fa-solid fa-house text-3xl text-custom-darkblue group-hover:scale-110 transition-transform"></i>
+                        <span class="font-heading font-extrabold text-xs uppercase tracking-wider text-custom-darkblue">Bria Homes</span>
+                    </div>
+
+                    <div class="bg-custom-white hover:bg-gray-50 w-[250px] md:w-[280px] py-8 px-4 rounded-xl transition-all flex flex-col items-center gap-3 border border-white/20 shadow-lg group shrink-0 transform hover:-translate-y-1">
                         <i class="fa-solid fa-tents text-3xl text-custom-darkblue group-hover:scale-110 transition-transform"></i>
                         <span class="font-heading font-extrabold text-xs uppercase tracking-wider text-custom-darkblue">Lumina Homes</span>
                     </div>
@@ -192,7 +225,6 @@
 
     <!-- Footer -->
     <footer class="relative text-custom-white font-heading pt-6">
-        
         <div class="bg-[#0f3294] h-10 w-full border-b border-white/10"></div>
         
         <div class="absolute top-10 left-0 right-0 z-30">

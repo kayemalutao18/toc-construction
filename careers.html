@@ -59,7 +59,7 @@
     </nav>
 
     <main>
-        <!-- Hero Header (UPDATED: Ginaya ang size, padding, at full alignment ng contact page hero header) -->
+        <!-- Hero Header -->
         <header class="relative h-[45vh] min-h-[320px] bg-black flex items-center overflow-hidden">
             <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1920');"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-custom-darkblue/90 via-custom-darkblue/50 to-transparent z-10"></div>
@@ -96,7 +96,7 @@
                     <span class="text-xs bg-custom-blue text-white font-heading font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">4 Active Roles</span>
                 </div>
                 
-                <div class="grid grid-cols-1 gap-4">                     
+                <div class="grid grid-cols-1 gap-4">                    
                     <!-- Job 1 -->
                     <div class="bg-white p-6 rounded shadow-sm border-l-4 border-custom-darkblue flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 transition-transform hover:-translate-y-0.5">
                         <div class="space-y-1">
@@ -184,31 +184,59 @@
             </div>
         </section>
 
-        <!-- Application Form -->
+        <!-- Application Form (UPDATED: Expanded 3-Column Layout matching Map size with full field validations) -->
         <section id="apply-form" class="relative bg-custom-darkblue text-custom-white py-24 z-10">
-            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 <div class="text-center mb-12">
                     <h3 class="text-2xl sm:text-4xl font-heading font-extrabold uppercase tracking-tight text-custom-white mb-3">Application Form</h3>
                     <p class="text-custom-lightbg text-sm sm:text-base font-sans leading-relaxed">Complete the fields below to directly interface with our HR department.</p>
                 </div>
-                <form class="space-y-6 bg-white text-gray-800 p-8 sm:p-10 rounded-xl shadow-2xl font-sans text-base">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                
+                <form class="space-y-6 bg-white text-gray-800 p-8 sm:p-12 rounded-xl shadow-2xl font-sans text-base">
+                    
+                    <!-- Row 1: Name Breakdown (3 Columns) -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div>
-                            <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Full Name *</label>
-                            <input type="text" placeholder="Juan Dela Cruz" required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
+                            <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Surname *</label>
+                            <input type="text" placeholder="Dela Cruz" required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
                         </div>
+                        <div>
+                            <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">First Name *</label>
+                            <input type="text" placeholder="Juan" required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Middle Name</label>
+                            <input type="text" placeholder="Santos" class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Personal Info & Numeric Only Contact Number (3 Columns) -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Birthday *</label>
+                            <input type="date" required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Sex *</label>
+                            <select required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue bg-white">
+                                <option value="">-- Select Sex --</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Contact Number *</label>
+                            <input type="tel" inputmode="numeric" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="09171234567" maxlength="11" required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Application Credentials (3 Columns) -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div>
                             <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Email Address *</label>
                             <input type="email" placeholder="juan@example.com" required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
                         </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Contact Number *</label>
-                            <input type="tel" placeholder="0917XXXXXXX" required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
-                        </div>
-                        <div class="relative">
                             <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Position Desired *</label>
                             <select required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue bg-white">
                                 <option value="">-- Choose Position --</option>
@@ -218,18 +246,25 @@
                                 <option>CAD Draftsman</option>
                             </select>
                         </div>
+                        <div>
+                            <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Upload Resume / CV (PDF) *</label>
+                            <input type="file" accept=".pdf" required class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded-lg text-sm text-gray-500 file:mr-3 file:py-2 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-heading file:font-bold file:bg-custom-blue file:text-white hover:file:bg-custom-purple cursor-pointer">
+                        </div>
                     </div>
 
+                    <!-- Row 4: Home Address (Full Width) -->
                     <div>
-                        <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Upload Resume / CV (PDF format) *</label>
-                        <input type="file" accept=".pdf" required class="w-full px-5 py-3 bg-gray-50 border border-gray-300 rounded-lg text-sm text-gray-500 file:mr-4 file:py-2.5 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-heading file:font-bold file:bg-custom-blue file:text-white hover:file:bg-custom-purple cursor-pointer">
+                        <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Home Address *</label>
+                        <input type="text" placeholder="House No., Street, Barangay, City, Province" required class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
                     </div>
 
+                    <!-- Row 5: Cover Statement -->
                     <div>
                         <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Short Cover Statement</label>
-                        <textarea rows="5" placeholder="Briefly describe your structural expertise or value addition..." class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue"></textarea>
+                        <textarea rows="4" placeholder="Briefly describe your structural expertise or value addition..." class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue"></textarea>
                     </div>
 
+                    <!-- Row 6: Action Button -->
                     <div class="pt-4">
                         <button type="submit" class="w-full bg-custom-blue hover:bg-custom-purple text-white font-heading font-bold text-sm uppercase tracking-widest py-4 rounded-lg transition-all shadow-md">
                             Submit Application

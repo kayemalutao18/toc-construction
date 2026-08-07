@@ -75,7 +75,7 @@
         <!-- Main Content Area -->
         <section class="py-24 bg-custom-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">                     
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">                    
                     
                     <!-- Left Side: Contact Information -->
                     <div class="lg:col-span-5 space-y-10">
@@ -146,7 +146,14 @@
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                 <div>
                                     <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Contact Number</label>
-                                    <input type="tel" placeholder="0917XXXXXXX" class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
+                                    <!-- UPDATED INPUT FIELD -->
+                                    <input type="tel" 
+                                           placeholder="0917XXXXXXX" 
+                                           pattern="[0-9]*" 
+                                           inputmode="numeric" 
+                                           maxlength="11" 
+                                           oninput="this.value = this.value.replace(/[^0-9]/g, '')" 
+                                           class="w-full px-5 py-3.5 bg-gray-50 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-custom-blue focus:ring-1 focus:ring-custom-blue">
                                 </div>
                                 <div>
                                     <label class="block text-sm font-heading font-bold text-custom-darkblue uppercase mb-2">Inquiry Type *</label>
@@ -182,7 +189,7 @@
             </div>
         </section>
 
-        <!-- Map Section (UPDATED: Binawasan ang space sa gilid para pantay sa nav bar alignment) -->
+        <!-- Map Section -->
         <section class="w-full bg-custom-white pb-24">
             <div class="max-w-full mx-auto px-6 sm:px-10 lg:px-12">
                 <div class="w-full h-[450px] bg-gray-200 border border-gray-300 rounded-xl overflow-hidden shadow-lg">
@@ -243,7 +250,7 @@
                                 <a href="#" class="hover:text-custom-lightbg transition-colors"><i class="fa-brands fa-twitter"></i></a>
                                 <a href="#" class="hover:text-custom-lightbg transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
-                        </div> Maxwell for a few classes last year, so I'll give him a pass brilliance and creepy apartment secret society on campus. What I have no idea all I know is understand why I'm a little upset there's something you should
+                        </div>
                         <div class="pt-2">
                             <a href="#" class="text-xl font-extrabold uppercase text-custom-white hover:text-custom-lightbg transition-colors tracking-wide block">
                                 PRIVACY POLICY
